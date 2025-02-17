@@ -23,6 +23,11 @@ header{
     align-items: center;
 }
 
+main{
+    display: flex;
+    padding: 3rem;
+}
+
 .nav-links ul{
     display: flex;
     gap: 2rem;
@@ -31,6 +36,7 @@ header{
 .nav-links ul li{
     font-size: 1.2rem;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 .nav-links ul li:hover{
@@ -49,29 +55,37 @@ header{
     border-radius: 100%;
 }
 
+.card-container{
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
 .card{
-    width: 30rem;
+    width: 80%;
     background-color: #ffb3c6;
     border-radius: 10px;
     margin: 2rem;
-    display: inline-block;
+    display:flex;
 }
 
 .card-image-container{
-    width: 100%;
-    height: 40%;
+    flex: 1;
 }
 
 .card-image-container img{
     width: 30rem;
-    height: 20rem;
-    border-radius: 10px 10px 0 0;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
     overflow: hidden;
 }
 
 .card-info-container{
     padding: 2rem;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .card-info-container button{
@@ -81,7 +95,26 @@ header{
     border-radius: 10px;
     margin-top: 0.5rem;
     font-weight: bold;
+    align-self: flex-end;
+    margin: 1rem 0 0 0;
 }
+
+.aside-panel{
+    width: 20%;
+    background-color: #ffb3c6;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aside-panel h2{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
 
 .footer-links{
     background-color: #ffb3c6;

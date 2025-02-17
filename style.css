@@ -15,9 +15,38 @@ a{
 
 header{
     background-color: #ffb3c6;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links ul li:hover{
+    color: #fff;
+    text-decoration: underline #fff 3px;
+    transform: scale(1.1);
+}
+    
+
+.logo-container{
+    width: 5rem;
+}
+
+.logo-container img{
+    width: 100%;
+    border-radius: 100%;
 }
 
 .card{
@@ -89,7 +118,7 @@ header{
 }
 
 .footer-links{
-    background-color: #7FB069;
+    background-color: #ffc8dd;
 }
 
 .footer-links img{

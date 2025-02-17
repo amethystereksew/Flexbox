@@ -28,6 +28,13 @@ main{
     padding: 3rem;
 }
 
+footer{
+    display: flex;
+    background-color: #ffc8dd;
+    padding: 2rem;
+    justify-content: center;
+}
+
 .nav-links ul{
     display: flex;
     gap: 2rem;
@@ -110,9 +117,11 @@ main{
 }
 
 .aside-panel h2{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 0.5rem;
+    padding: 2rem 0 1.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -151,7 +160,10 @@ main{
 }
 
 .footer-links{
-    background-color: #ffc8dd;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
 }
 
 .footer-links img{
